@@ -15,7 +15,7 @@ import './banner.css';
 
 const Banner = () => {
     return (
-        <div className='lg:h-[600px]'>
+        <div className='lg:h-[700px]'>
             <Swiper
                 style={{
                     '--swiper-navigation-color': '#fff',
@@ -41,7 +41,7 @@ const Banner = () => {
                 ></div>
                 <SwiperSlide className='lg:ml-10'>
                     <div className="title" data-swiper-parallax="-300">
-                        <h1 className='bg-white lg:w-1/4 px-5 py-2 lg:text-xl lg:mt-10  normal-case font-bold rounded-full text-blue-500'>We are IT service agency</h1>
+                        <h1 className='bg-white lg:w-1/4 px-3 py-2 lg:text-xl lg:mt-10  normal-case font-bold rounded-full text-blue-500'>We are IT service agency</h1>
                     </div>
                     <div className="subtitle" data-swiper-parallax="-200">
                         <p className='text-2xl lg:text-7xl font-bold mt-5 mb-3'>Think Big,We make <br /> IT,Possible!</p>
