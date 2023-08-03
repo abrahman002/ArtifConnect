@@ -1,105 +1,116 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsTelephoneForward, BsMap, BsFacebook, BsTwitter, BsArrowRight } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import Logo from '../../assets/Logo.png'
+import './navber.css'
+import NavLinks from './NavLinks';
+import Button from './Button';
 
 
 const Navber = () => {
+    const [open, setOpen] = useState(false);
+
+    // const handleDropdownToggle = () => {
+    //     setShowDropdown((prev) => !prev);
+    // };
 
 
-    const menu = <>
-    {/* Home Menu */}
-        <li tabIndex={0}>
-            <details>
-                <summary>Home</summary>
-                <ul className="p-2">
+    // const menu = <>
+    //     {/* Home Menu */}
+    //     <li tabIndex={0}>
+    //         <details>
+    //             <summary>Home</summary>
+    //             <ul className="p-2">
 
-                </ul>
-            </details>
-        </li>
-        {/* Page Menu */}
-        <li tabIndex={0}>
-            <details>
-                <summary>Page</summary>
-                <ul className="p-2 w-60 ">
-                    <li><Link>About</Link></li>
-                    <li><Link>Out Team</Link></li>
-                    <li><Link>Team Details</Link></li>
-                    <li><Link>Team Details</Link></li>
-                    <li><Link>Pricing</Link></li>
-                    <li><Link>FAQs</Link></li>
-                    <li><Link>Contact Us</Link></li>
-                    <li><Link>Error 404</Link></li>
+    //             </ul>
+    //         </details>
+    //     </li>
+    //     {/* Page Menu */}
+    //     <li tabIndex={0}>
+    //         <details>
+    //             <summary>Page</summary>
+    //             <ul className="p-2 w-60 ">
+    //                 <li><Link>About</Link></li>
+    //                 <li><Link>Out Team</Link></li>
+    //                 <li><Link>Team Details</Link></li>
+    //                 <li><Link>Team Details</Link></li>
+    //                 <li><Link>Pricing</Link></li>
+    //                 <li><Link>FAQs</Link></li>
+    //                 <li><Link>Contact Us</Link></li>
+    //                 <li><Link>Error 404</Link></li>
 
-                    <li tabIndex={0}>
-                        <details>
-                            <summary>Shop</summary>
-                            <ul className="p-2 w-48">
-                                <li><Link>Our Products</Link></li>
-                                <li><Link>Whishlist</Link></li>
-                                <li><Link>Cart</Link></li>
-                                <li><Link>Checkout</Link></li>
-                                <li><Link>Product Details</Link></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li tabIndex={0}>
-                        <details>
-                            <summary>User Page</summary>
-                            <ul className="p-2 w-48">
-                                <li><Link>Login</Link></li>
-                                <li><Link>Register</Link></li>
+    //                 <li tabIndex={0}>
+    //                     <details>
+    //                         <summary>Shop</summary>
+    //                         <ul className="p-2 w-48">
+    //                             <li><Link>Our Products</Link></li>
+    //                             <li><Link>Whishlist</Link></li>
+    //                             <li><Link>Cart</Link></li>
+    //                             <li><Link>Checkout</Link></li>
+    //                             <li><Link>Product Details</Link></li>
+    //                         </ul>
+    //                     </details>
+    //                 </li>
+    //                 <li tabIndex={0}>
+    //                     <details>
+    //                         <summary>User Page</summary>
+    //                         <ul className="p-2 w-48">
+    //                             <li><Link>Login</Link></li>
+    //                             <li><Link>Register</Link></li>
 
-                            </ul>
-                        </details>
-                    </li>
+    //                         </ul>
+    //                     </details>
+    //                 </li>
 
-                    <li><Link>Landing</Link></li>
-                </ul>
-            </details>
-        </li>
-        {/* Service Menu */}
-        <li tabIndex={0}>
-            <details>
-                <summary>Service</summary>
-                <ul className="p-2 w-48">
-                    <li><Link>Our Service</Link></li>
-                    <li><Link>Service Details </Link></li>
-                </ul>
-            </details>
-        </li>
-        {/* Portfolio Menu */}
-        <li tabIndex={0}>
-            <details>
-                <summary>Portfolio</summary>
-                <ul className="p-2 w-48">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                </ul>
-            </details>
-        </li>
-{/* Blog Menu */}
-        <li tabIndex={0}>
-            <details>
-                <summary>Blog</summary>
-                <ul className="p-2 w-48">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                </ul>
-            </details>
-        </li>
-{/* Elements */}
-        <li tabIndex={0}>
-            <details>
-                <summary>Elements</summary>
-                <ul className="p-2 w-48">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                </ul>
-            </details>
-        </li>
+    //                 <li><Link>Landing</Link></li>
+    //             </ul>
+    //         </details>
+    //     </li>
+    //     {/* Service Menu */}
+    //     <li tabIndex={0}>
+    //         <details>
+    //             <summary>Service</summary>
+    //             <ul className="p-2 w-48">
+    //                 <li><Link>Our Service</Link></li>
+    //                 <li><Link>Service Details </Link></li>
+    //             </ul>
+    //         </details>
+    //     </li>
+    //     {/* Portfolio Menu */}
+    //     <li tabIndex={0}>
+    //         <details>
+    //             <summary>Portfolio</summary>
+    //             <ul className="p-2 w-48">
+    //                 <li><a>Submenu 1</a></li>
+    //                 <li><a>Submenu 2</a></li>
+    //             </ul>
+    //         </details>
+    //     </li>
+    //     {/* Blog Menu */}
+    //     <li tabIndex={0}>
+    //         <details>
+    //             <summary>Blog</summary>
+    //             <ul className="p-2 w-48">
+    //                 <li><a>Submenu 1</a></li>
+    //                 <li><a>Submenu 2</a></li>
+    //             </ul>
+    //         </details>
+    //     </li>
+    //     {/* Elements */}
+    //     <li tabIndex={0}>
+    //         <details>
+    //             <summary>Elements</summary>
+    //             <ul className="p-2 w-48">
+    //                 <li><a>Submenu 1</a></li>
+    //                 <li><a>Submenu 2</a></li>
+    //             </ul>
+    //         </details>
+    //     </li>
 
-    </>
+    // </>
+
+
     return (
         <div>
             {/* top nav */}
@@ -114,35 +125,43 @@ const Navber = () => {
                 </div>
             </div>
             {/* responsive menu */}
-            <div className="navbar  lg:px-10 border-t-2">
+            <nav className='bg-white border-t-2 '>
+                <div className='flex items-center font-medium justify-around'>
+                    {/* logo */}
+                    <div className='z-50 p-5 lg:w-auto w-full flex justify-between'>
+                        <img src={Logo} alt="logo" className='md:cursor-pointer h-9' />
+                        <div className='text-3xl lg:hidden' onClick={()=>setOpen(!open)}>
+                        <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+                        </div>
+                    </div>
+                    {/*  */}
 
-                <div className="navbar-start lg:hidden z-10  ">
-                    <div className="dropdown">
-                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 mt-3 z-[1] p-2 shadow  rounded-box w-72">
-                            {menu}
-                        </ul>
+                    <ul className='lg:flex hidden uppercase  items-center gap-5 font-[Poppins] z-10'>
+                        <li>
+                            <Link className='py-7 px-3 inline-block'>
+                                Home
+                            </Link>
+                        </li>
+                        <NavLinks></NavLinks>
+                    </ul>
+                    <div className='lg:block hidden'>
+                        <Button />
                     </div>
 
-                </div>
-                {/* Company Name */}
-                <Link className=" normal-case text-xl ">ArtifConnect</Link>
+                    {/* Mobile nav */}
 
-                {/*Nav Menu  */}
-                <div className="navbar hidden lg:flex z-10">
-                    <ul className="menu menu-horizontal px-1 text-base font-bold">
-                        {menu}
+                    <ul className={
+                        `lg:hidden z-10 bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"} `
+                    }>
+                        <li>
+                            <Link className='py-7 px-3 inline-block'>
+                                Home
+                            </Link>
+                        </li>
+                        <NavLinks></NavLinks>
                     </ul>
                 </div>
-                <div className="navbar-end lg:flex hidden">
-                    <div className="form-control w-36 mr-10 border-l-2 border-r-2">
-                        <input type="text" placeholder="Search" className="input input-bordered ml-3 mr-3" />
-                    </div>
-                    <button className='btn btn-primary rounded-full text-white shadow-md shadow-blue-500'>Get a quote now <BsArrowRight className='text-white'></BsArrowRight></button>
-                </div>
-            </div>
+            </nav>
         </div>
     );
 };

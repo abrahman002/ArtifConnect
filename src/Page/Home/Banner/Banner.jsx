@@ -51,12 +51,12 @@ const Banner = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                             dictum mattis velit, sit amet faucibus felis iaculis nec.
                         </p>
-                        <button className='btn btn-primary mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
+                        <button className='btn bg-primary px-5 p-3 rounded-lg flex items-center gap-2 mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide  >
                     <div className="title" data-swiper-parallax="-300">
-                    <h1 className='bg-white lg:w-1/4 px-5 py-2 lg:text-xl lg:mt-10 normal-case font-bold rounded-full text-blue-500'>We are IT service agency</h1>
+                        <h1 className='bg-white lg:w-1/4 px-5 py-2 lg:text-xl lg:mt-10 normal-case font-bold rounded-full text-blue-500'>We are IT service agency</h1>
                     </div>
                     <div className="subtitle" data-swiper-parallax="-200">
                         <p className='text-2xl lg:text-7xl font-bold mt-5 mb-3'>Prosper in this volatile <br /> market funding.</p>
@@ -66,10 +66,10 @@ const Banner = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                             dictum mattis velit, sit amet faucibus felis iaculis nec.
                         </p>
-                        <button className='btn btn-primary mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
+                        <button className='btn bg-primary px-5 p-3 rounded-lg flex items-center gap-2 mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
                     </div>
                 </SwiperSlide>
-                
+
             </Swiper>
         </div>
     );
