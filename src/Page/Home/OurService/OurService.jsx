@@ -14,7 +14,7 @@ const OurService = () => {
 
 
     return (
-        <div className='service absolute w-full pb-10' >
+        <div className='service w-full pb-10 pt-10 lg:pt-0' >
             <div className='lg:grid grid-cols-5 gap-2 card-group lg:top-[-100px] lg:mt-0 mt-16  lg:relative  z-10 lg:px-14 px-5 ' data-aos="fade-up">
                 <div className='card lg:w-56 p-10 bg-white flex items-center flex-col  '>
                     <img className='w-14 mb-5' src="https://i.ibb.co/p4wFD9m/designer.png" alt="" />
