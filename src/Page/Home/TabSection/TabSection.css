@@ -1,0 +1,78 @@
+/* TabSection.css */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  /* .centered {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 8px;
+  }
+   */
+  .custom-tab {
+    /* padding: 12px 20px; */
+    margin: 4px;
+    /* font-size: 18px; */
+    font-weight: bold;
+    /* color: #333; */
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* .custom-tab:hover {
+    background-color: #ccc;
+  } */
+  
+  /* .react-tabs__tab--selected {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+  } */
+  
+  .react-tabs__tab-panel {
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Animation */
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .react-tabs__tab-panel--selected {
+    animation: slideInFromRight 0.9s ease-in-out;
+  }
+  
+
+
+
+  

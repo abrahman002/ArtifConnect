@@ -4,6 +4,8 @@ import OurService from '../OurService/OurService';
 import AbouOurCompany from '../AboutOurCompany/AbouOurCompany';
 import OurAsesomeService from '../../OurAwesomeService/OurAsesomeService';
 import OurCaseStudies from '../OurCaseStudies/OurCaseStudies';
+import WhyChooseUs from '../WhyChooseUs/WhyChooseUs';
+import TabSection from '../TabSection/TabSection';
 
 
 const Home = () => {
@@ -17,6 +19,8 @@ const Home = () => {
             <AbouOurCompany></AbouOurCompany>
             <OurAsesomeService></OurAsesomeService>
             <OurCaseStudies></OurCaseStudies>
+            <WhyChooseUs></WhyChooseUs>
+            <TabSection></TabSection>
         </div>
     );
 };
