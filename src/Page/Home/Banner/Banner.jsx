@@ -51,7 +51,7 @@ const Banner = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                             dictum mattis velit, sit amet faucibus felis iaculis nec.
                         </p>
-                        <button className='btn bg-primary px-5 p-3 rounded-lg flex items-center gap-2 mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
+                        <button className='btn text-white  bg-primary px-5 p-3 rounded-lg flex items-center gap-2 mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide  >
@@ -66,7 +66,7 @@ const Banner = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                             dictum mattis velit, sit amet faucibus felis iaculis nec.
                         </p>
-                        <button className='btn bg-primary px-5 p-3 rounded-lg flex items-center gap-2 mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
+                        <button className='btn text-white bg-primary px-5 p-3 rounded-lg flex items-center gap-2 mt-10 normal-case font-bold'>Our Team<BsArrowRight className='text-white'></BsArrowRight></button>
                     </div>
                 </SwiperSlide>
 

@@ -9,6 +9,7 @@ import TabSection from '../TabSection/TabSection';
 import Webdevelops from '../WebDevelops/Webdevelops';
 import PricingPlan from '../PricingPlan/PricingPlan';
 import Testimonials from '../Testimonials/Testimonials';
+import BlogSection from '../BlogSection/BlogSection';
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
             <Webdevelops></Webdevelops>
             <PricingPlan></PricingPlan>
             <Testimonials></Testimonials>
+            <BlogSection></BlogSection>
         </div>
     );
 };
