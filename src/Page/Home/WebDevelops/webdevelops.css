@@ -1,0 +1,10 @@
+.webdevelops-container {
+    background-image: linear-gradient(to bottom, #007bffc9, #0057b3e1), url('https://img.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg?size=626&ext=jpg&ga=GA1.2.1962734003.1691067639&semt=sph');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+    /* Add any other styles you want for the container */
+    /* width: 80%;
+    height: 300px; */
+  }
+  
