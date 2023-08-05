@@ -1,0 +1,27 @@
+.text-border{
+    border-bottom: 4px solid blue;
+    width: 80px;
+    
+    
+}
+
+.card-slider{
+    border-top-left-radius: 30%; 
+}
+
+.card-slider img{
+    margin-top: -40px;
+    background-color: rgba(251, 250, 255, 0.692);
+    padding: 20px;
+    border-radius: calc(20px);
+    
+}
+
+
+.slick-slide>div{
+    margin: 0px 10px;
+
+}
+.slick-list{
+    margin: 0 -10px;
+}
