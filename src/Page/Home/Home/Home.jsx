@@ -8,6 +8,7 @@ import WhyChooseUs from '../WhyChooseUs/WhyChooseUs';
 import TabSection from '../TabSection/TabSection';
 import Webdevelops from '../WebDevelops/Webdevelops';
 import PricingPlan from '../PricingPlan/PricingPlan';
+import Testimonials from '../Testimonials/Testimonials';
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
             <TabSection></TabSection>
             <Webdevelops></Webdevelops>
             <PricingPlan></PricingPlan>
+            <Testimonials></Testimonials>
         </div>
     );
 };
