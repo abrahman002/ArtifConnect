@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CaseSlider from './CaseSlider';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const OurCaseStudies = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
     return (
-        <div className="py-10">
+        <div className="py-10" data-aos="fade-up">
         <div >
             <div className="title  lg:pl-32 px-7" data-swiper-parallax="-300">
                 <div className='pt-20 mb-10' >

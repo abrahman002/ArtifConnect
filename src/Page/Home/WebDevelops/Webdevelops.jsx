@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CountUp from 'react-countup';
 import './webdevelops.css'; // Import your CSS file
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Webdevelops = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
     return (
-        <div className="webdevelops-container lg:ml-20  ml-5 mr-5 lg:mr-20  rounded-xl mt-10 lg:h-[350px] ">
+        <div data-aos="fade-up" className="webdevelops-container lg:ml-20  ml-5 mr-5 lg:mr-20  rounded-xl mt-10 lg:h-[350px] ">
             <div className='flex justify-center text-center'>
                 <h1 className='lg:text-3xl text-2xl mb-10 lg:mb-0 text-white font-bold lg:mt-16 mt-5'>We develops strategic software solutions for businesses.</h1>
             </div>

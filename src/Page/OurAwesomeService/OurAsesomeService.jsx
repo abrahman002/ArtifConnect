@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ourService.css'
 import OurAwesomeSlider from './OurAwesomeSlider';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 const OurAsesomeService = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
+
     return (
-        <div className="lg:py-28 py-32  our-service">
+        <div className="lg:py-28 py-32  our-service" data-aos="fade-up">
             <div className='lg:px-20 px-7'>
                 <div className="title flex justify-center" data-swiper-parallax="-300">
                     <div className='pt-20 mb-10' >

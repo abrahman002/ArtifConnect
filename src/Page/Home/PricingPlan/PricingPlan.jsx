@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './pricinigplan.css';
 import { AiOutlineCheck } from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const CustomTab = ({ children, onClick, isSelected }) => {
+
+    
     return (
         <Tab>
             <div
@@ -26,8 +30,13 @@ const PricingPlan = () => {
         setSelectedTab(index);
     };
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
-        <div className='mt-28'>
+        <div className='mt-28' data-aos="fade-up">
             <div className='flex justify-center'>
                 <div>
                     <button className='text-xl text-primary font-bold lg:ml-32 ml-16 mb-8 text-center px-12 py-3 rounded-full bg-white shadow-xl shadow-blue-300'>Pricing Plan</button>

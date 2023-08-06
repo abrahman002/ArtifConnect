@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './testimonials.css'
 import TestimonialsCarousel from './TestimonialsCarousel';
 import { BsArrowRight } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Testimonials = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
+
     return (
-        <div className='mt-20'>
+        <div className='mt-20' data-aos="fade-up">
             <div className='testimonials-bg lg:w-full lg:h-[100vh]   lg:grid grid-cols-2 gap-10 pb-16'>
                 <div className='lg:py-40 py-20 lg:px-20 px-5 '>
                     <div>

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './TabSection.css';
 import { BsArrowRight } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const TabSection = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
     return (
-        <div className="tabs-container  ">
+        <div className="tabs-container  " data-aos="fade-up">
 
 
             <Tabs>

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhyChooseUs = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
     return (
-        <div className="py-10">
+        <div className="py-10" data-aos="fade-up">
 
             <div className="title flex justify-center lg:px-0 px-10" >
 
